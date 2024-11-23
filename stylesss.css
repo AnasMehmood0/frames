@@ -1,0 +1,137 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Dark Gym Theme Body */
+  body {
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    background: linear-gradient(120deg, #0a0a0a, #141414);
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(100, 100, 100, 0.1) 5%, rgba(0, 0, 0, 0.7) 70%);
+    animation: moveBackground 12s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+  /* Article Styling */
+  .fitness-article {
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #f05454;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-top: 5px;
+  }
+  
+  /* Article Content Styling */
+  .article-content h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #f05454;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .article-content h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #ffd700;
+  }
+  
+  .article-content p, ul {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #f0f0f0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Button-Like Hover Effect for Headers */
+  h2:hover, h3:hover {
+    color: #1bc5bd;
+    text-shadow: 0 0 10px #1bc5bd;
+    cursor: pointer;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Subtle Link Style (if needed) */
+  a {
+    color: #1bc5bd;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f05454;
+    text-decoration: underline;
+  }
+  

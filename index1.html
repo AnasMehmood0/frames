@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <section id="bmi">
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" required>
+          <label for="height">Height (m):</label>
+          <input type="number" step="0.01" id="height" required>
+          <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+        <p id="bmiResult"></p>
+        <script src="scriptss.js"></script>
+      </section>
+</body>
+</html>
